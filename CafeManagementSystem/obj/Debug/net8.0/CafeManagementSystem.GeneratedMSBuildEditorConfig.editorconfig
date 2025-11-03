@@ -7,20 +7,40 @@ build_property.AvaloniaNameGeneratorFilterByNamespace = *
 build_property.AvaloniaNameGeneratorViewFileNamingStrategy = NamespaceAndClassName
 build_property.AvaloniaNameGeneratorAttachDevTools = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CafeManagementSystem
-build_property.ProjectDir = C:\Users\user\RiderProjects\CafeManagementSystem\
+build_property.ProjectDir = C:\Users\user\RiderProjects\8\CafeManagementSystem\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/user/RiderProjects/CafeManagementSystem/App.axaml]
+[C:/Users/user/RiderProjects/8/CafeManagementSystem/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/user/RiderProjects/CafeManagementSystem/Views/MainWindow.axaml]
+[C:/Users/user/RiderProjects/8/CafeManagementSystem/Views/AdminView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/user/RiderProjects/8/CafeManagementSystem/Views/CookView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/user/RiderProjects/8/CafeManagementSystem/Views/LoginView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/user/RiderProjects/8/CafeManagementSystem/Views/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/user/RiderProjects/8/CafeManagementSystem/Views/WaiterView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

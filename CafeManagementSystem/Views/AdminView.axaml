@@ -1,0 +1,20 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:CafeManagementSystem.ViewModels"
+             x:Class="CafeManagementSystem.Views.AdminView"
+             x:DataType="vm:AdminViewModel">
+    
+    <Panel Background="White">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+            <Border Width="100" Height="100" Background="#4f46e5" CornerRadius="50"
+                    HorizontalAlignment="Center">
+                <TextBlock Text="👑" FontSize="36" Foreground="White" 
+                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+            <TextBlock Text="{Binding WelcomeMessage}" FontSize="24" FontWeight="SemiBold" 
+                       Foreground="#1e293b" HorizontalAlignment="Center"/>
+            <TextBlock Text="Панель администратора" FontSize="16" 
+                       Foreground="#64748b" HorizontalAlignment="Center"/>
+        </StackPanel>
+    </Panel>
+</UserControl>

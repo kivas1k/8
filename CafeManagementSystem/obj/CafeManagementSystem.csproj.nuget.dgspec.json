@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\RiderProjects\\CafeManagementSystem\\CafeManagementSystem.csproj": {}
+    "C:\\Users\\user\\RiderProjects\\8\\CafeManagementSystem\\CafeManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\RiderProjects\\CafeManagementSystem\\CafeManagementSystem.csproj": {
+    "C:\\Users\\user\\RiderProjects\\8\\CafeManagementSystem\\CafeManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\RiderProjects\\CafeManagementSystem\\CafeManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\user\\RiderProjects\\8\\CafeManagementSystem\\CafeManagementSystem.csproj",
         "projectName": "CafeManagementSystem",
-        "projectPath": "C:\\Users\\user\\RiderProjects\\CafeManagementSystem\\CafeManagementSystem.csproj",
+        "projectPath": "C:\\Users\\user\\RiderProjects\\8\\CafeManagementSystem\\CafeManagementSystem.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\RiderProjects\\CafeManagementSystem\\obj\\",
+        "outputPath": "C:\\Users\\user\\RiderProjects\\8\\CafeManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -74,6 +74,8 @@
               "version": "[9.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.10, )"
             },

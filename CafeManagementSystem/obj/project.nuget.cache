@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "smjr8OXrIT4=",
+  "dgSpecHash": "a5cJci73x2g=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\RiderProjects\\CafeManagementSystem\\CafeManagementSystem.csproj",
+  "projectFilePath": "C:\\Users\\user\\RiderProjects\\8\\CafeManagementSystem\\CafeManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\avalonia\\11.3.6\\avalonia.11.3.6.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.25547.20250602\\avalonia.angle.windows.natives.2.1.25547.20250602.nupkg.sha512",
