@@ -4,13 +4,13 @@
              x:Class="CafeManagementSystem.Views.LoginView"
              x:DataType="vm:LoginViewModel">
     
-    <Panel Background="White">
-        <!-- Простой и элегантный дизайн -->
-        <Border Width="380" Height="450" Background="White" 
+    <Panel Background="#f8fafc">
+        <!-- Основная карточка -->
+        <Border Width="400" Height="500" Background="White" 
                 CornerRadius="16" BorderThickness="1" BorderBrush="#e5e7eb"
                 HorizontalAlignment="Center" VerticalAlignment="Center">
             
-            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Spacing="25">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="320" Spacing="25">
                 <!-- Заголовок -->
                 <StackPanel HorizontalAlignment="Center" Spacing="15">
                     <Border Width="80" Height="80" Background="#4f46e5" CornerRadius="40"
@@ -32,47 +32,78 @@
                         <TextBlock Text="Логин" FontSize="12" FontWeight="SemiBold" Foreground="#374151"/>
                         <TextBox Text="{Binding Username}" FontSize="14" Padding="12" 
                                  BorderThickness="1" BorderBrush="#d1d5db" CornerRadius="8"
-                                 Watermark="Введите ваш логин"/>
+                                 Background="#ffffff" Foreground="#1e293b"
+                                 Watermark="Введите ваш логин">
+                            <TextBox.Styles>
+                                <Style Selector="TextBox">
+                                    <Setter Property="Background" Value="#ffffff"/>
+                                    <Setter Property="Foreground" Value="#1e293b"/>
+                                </Style>
+                                <Style Selector="TextBox:focus">
+                                    <Setter Property="BorderBrush" Value="#4f46e5"/>
+                                    <Setter Property="BorderThickness" Value="2"/>
+                                    <Setter Property="Background" Value="#ffffff"/>
+                                </Style>
+                            </TextBox.Styles>
+                        </TextBox>
                     </StackPanel>
 
                     <StackPanel Spacing="5">
                         <TextBlock Text="Пароль" FontSize="12" FontWeight="SemiBold" Foreground="#374151"/>
                         <TextBox Text="{Binding Password}" PasswordChar="•" FontSize="14" Padding="12"
                                  BorderThickness="1" BorderBrush="#d1d5db" CornerRadius="8"
-                                 Watermark="Введите ваш пароль"/>
+                                 Background="#ffffff" Foreground="#1e293b"
+                                 Watermark="Введите ваш пароль">
+                            <TextBox.Styles>
+                                <Style Selector="TextBox">
+                                    <Setter Property="Background" Value="#ffffff"/>
+                                    <Setter Property="Foreground" Value="#1e293b"/>
+                                </Style>
+                                <Style Selector="TextBox:focus">
+                                    <Setter Property="BorderBrush" Value="#4f46e5"/>
+                                    <Setter Property="BorderThickness" Value="2"/>
+                                    <Setter Property="Background" Value="#ffffff"/>
+                                </Style>
+                            </TextBox.Styles>
+                        </TextBox>
                     </StackPanel>
                 </StackPanel>
 
-                <!-- Кнопка входа - ИСПРАВЛЕННАЯ -->
-                <Button Content="Войти" Command="{Binding LoginCommand}" 
-                        Background="#4f46e5" Foreground="White" FontSize="14" FontWeight="SemiBold"
-                        Height="44" CornerRadius="8" BorderThickness="0"
-                        HorizontalAlignment="Stretch">
-                    <Button.Styles>
-                        <Style Selector="Button:pointerover /template/ ContentPresenter">
-                            <Setter Property="Background" Value="#4338ca"/>
-                            <Setter Property="TextBlock.Foreground" Value="White"/>
-                        </Style>
-                        <Style Selector="Button:pressed /template/ ContentPresenter">
-                            <Setter Property="Background" Value="#3730a3"/>
-                            <Setter Property="TextBlock.Foreground" Value="White"/>
-                        </Style>
-                    </Button.Styles>
-                </Button>
+                <!-- Кнопка входа - ЦЕНТРИРОВАННАЯ -->
+                <StackPanel HorizontalAlignment="Center">
+                    <Button Content="Войти" Command="{Binding LoginCommand}" 
+                            Background="#4f46e5" Foreground="White" FontSize="14" FontWeight="SemiBold"
+                            Height="44" Width="200" CornerRadius="8" BorderThickness="0"
+                            HorizontalAlignment="Center">
+                        <Button.Styles>
+                            <Style Selector="Button:pointerover">
+                                <Setter Property="Background" Value="#4338ca"/>
+                                <Setter Property="Cursor" Value="Hand"/>
+                            </Style>
+                            <Style Selector="Button:pressed">
+                                <Setter Property="Background" Value="#3730a3"/>
+                                <Setter Property="BorderThickness" Value="0"/>
+                            </Style>
+                        </Button.Styles>
+                    </Button>
+                </StackPanel>
 
                 <!-- Сообщение об ошибке -->
                 <Border Background="#fef2f2" BorderBrush="#fecaca" BorderThickness="1" CornerRadius="6" 
                         Padding="10" IsVisible="{Binding ErrorMessage, Converter={x:Static StringConverters.IsNotNullOrEmpty}}">
-                    <TextBlock Text="{Binding ErrorMessage}" Foreground="#dc2626" FontSize="12" 
-                               TextWrapping="Wrap" TextAlignment="Center"/>
+                    <StackPanel HorizontalAlignment="Center" Spacing="4">
+                        <TextBlock Text="❌" FontSize="14" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{Binding ErrorMessage}" Foreground="#dc2626" FontSize="12" 
+                                   TextWrapping="Wrap" TextAlignment="Center"/>
+                    </StackPanel>
                 </Border>
 
                 <!-- Тестовые данные -->
-                <Border Background="#f8fafc" BorderThickness="1" BorderBrush="#e2e8f0" CornerRadius="8" Padding="12">
+                <Border Background="#f0f9ff" BorderThickness="1" BorderBrush="#bae6fd" CornerRadius="8" Padding="12">
                     <StackPanel Spacing="6">
-                        <TextBlock Text="Тестовые пользователи:" FontWeight="SemiBold" 
-                                   Foreground="#374151" FontSize="11" HorizontalAlignment="Center"/>
-                        <StackPanel Spacing="2">
+                        <TextBlock Text="📋 Тестовые пользователи" FontWeight="SemiBold" 
+                                   Foreground="#0369a1" FontSize="11" HorizontalAlignment="Center"/>
+                        <StackPanel Spacing="3">
                             <TextBlock Text="👑 Админ: admin / admin123" FontSize="10" Foreground="#64748b" HorizontalAlignment="Center"/>
                             <TextBlock Text="💁 Официант: waiter / waiter123" FontSize="10" Foreground="#64748b" HorizontalAlignment="Center"/>
                             <TextBlock Text="👨‍🍳 Повар: cook / cook123" FontSize="10" Foreground="#64748b" HorizontalAlignment="Center"/>

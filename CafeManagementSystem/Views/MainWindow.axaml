@@ -11,8 +11,7 @@
         Title="Cafe Management System"
         WindowStartupLocation="CenterScreen"
         MinWidth="800" MinHeight="600"
-        TransparencyLevelHint="None"
-        ExtendClientAreaToDecorationsHint="False">
+        Background="#f8fafc"> <!-- Добавлен светлый фон -->
     
     <ContentControl Content="{Binding CurrentViewModel}"/>
 
